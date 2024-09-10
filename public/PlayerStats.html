@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Routes</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="NavBar.js"></script>
+    <script src="PlayerStats.js"></script>
+    <script src="footer.js"></script>
+
+    <style>
+        .tackles-column {
+    display: none;
+}
+    </style>
+</head>
+
+<body>
+    <div class="NavBar"></div>
+    <hr />
+
+    <H1>Player Stats</H1>
+
+    <div class="mb-3">
+        <label for="sortingDropdown" class="form-label">Select Option:</label>
+        <select class="form-select" id="sortingDropdown">
+
+        </select>
+    </div>
+
+    <table class="table table-sm">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Player</th>
+                <th scope="col">Team</th>
+                <th class="points-column">Points</th>
+                <th class="tackles-column">Tackles</th>
+
+            </tr>
+        </thead>
+        <tbody id="playersTableBody">
+            <!-- Players will be dynamically added here -->
+        </tbody>
+    </table>
+    <div class="footer" id="footer"></div>
+</body>
+
+</html>
